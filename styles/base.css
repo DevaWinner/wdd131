@@ -1,0 +1,162 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--primary-color: #5e0b15;
+	--secondary-color: #90323d;
+	--tertiary-color: #ffffff;
+	--aside-color: #e7d915;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: var(--tertiary-color);
+	line-height: 1.6;
+}
+
+.aside {
+	color: var(--aside-color) !important;
+}
+
+header {
+	text-align: center;
+}
+
+.welcome-message {
+	background-color: var(--primary-color);
+	padding: 40px 0;
+}
+
+.welcome-message h1 {
+	font-size: 1.8rem;
+}
+
+nav {
+	background-color: var(--secondary-color);
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1rem;
+	padding: 2rem;
+}
+
+nav a {
+	position: relative;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+nav a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+	width: 90%;
+}
+
+/* Main Content Styles */
+main {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+	max-width: 90%;
+	margin: 2rem auto;
+	padding: 1rem;
+}
+
+.card {
+	color: #000;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+.about-me {
+	background-color: var(--primary-color);
+	color: var(--tertiary-color);
+	padding: 10px;
+	border-radius: 8px 8px 0 0;
+	text-align: center;
+}
+
+.about-content {
+	display: flex;
+	padding: 30px;
+	gap: 20px;
+}
+
+.about-content p {
+	font-size: 1.2rem;
+	text-align: justify;
+	flex: 3;
+}
+
+.img-container {
+	width: 100%;
+	flex: 1;
+}
+
+.img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.my-country {
+	margin-top: 4rem;
+}
+
+.my-country .about-content {
+	flex-direction: row-reverse;
+}
+
+.country {
+	text-align: center;
+}
+
+hr {
+	border: 1px solid #ccc;
+	width: 70%;
+	margin: 20px auto;
+}
+
+.card-2 .about-content {
+	padding: 30px 40px;
+	flex-direction: column;
+}
+
+/* Footer Styles */
+footer {
+	background-color: var(--primary-color);
+	text-align: center;
+	padding: 2rem;
+}
+
+footer p {
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
+
+footer p:last-child {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
