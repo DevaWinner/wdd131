@@ -97,7 +97,8 @@ main {
 	text-align: center;
 }
 
-.about-content {
+.about-content,
+.about-country {
 	display: flex;
 	padding: 30px;
 	gap: 20px;
@@ -124,12 +125,22 @@ main {
 	margin-top: 4rem;
 }
 
-.my-country .about-content {
-	flex-direction: row-reverse;
+.country-image {
+	width: 60%;
+}
+
+.country-image img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
 }
 
 .country {
 	text-align: center;
+}
+
+.about-country p {
+	width: 100%;
 }
 
 hr {
@@ -187,8 +198,12 @@ footer p:last-child {
 		padding: 10px;
 	}
 
-	.my-country .about-content {
+	.my-country .about-country {
 		flex-direction: column;
+	}
+
+	.country-image {
+		width: 100%;
 	}
 
 	.card-2 .about-content {
