@@ -60,7 +60,7 @@
 		transform: translateZ(0);
 	}
 
-	.info h2::before {
+	.info h2::after {
 		content: "";
 		position: absolute;
 		top: -5px;
