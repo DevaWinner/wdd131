@@ -55,6 +55,21 @@
 		margin-bottom: 0.5rem;
 		color: var(--secondary-color);
 		text-align: left;
+		position: relative;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.39);
+		transform: translateZ(0);
+	}
+
+	.info h2::before {
+		content: "";
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		right: -5px;
+		bottom: -5px;
+		border: 2px solid rgba(0, 0, 0, 0.1);
+		z-index: -1; 
+		border-radius: 5px; 
 	}
 
 	.info ul {
