@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Aniekan Winner Anietie. Information about Nigeria.">
+    <meta name="author" content="Aniekan Winner Anietie">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/nigeria-large.webp" media="(min-width: 769px)">
+            <img src="images/nigeria-sm.webp" alt="A view of Nigeria">
+        </picture>
+        <section class="info">
+          <div class="data">
+              <h2>Data</h2>
+              <ul>
+                  <li><strong>Area:</strong> <span>923,769 sq km</span></li>
+                  <li><strong>Population:</strong> <span>211,400,708</span></li>
+                  <li><strong>Capital:</strong> <span>Abuja</span></li>
+                  <li><strong>Languages:</strong> <span>English, Hausa, Yoruba</span></li>
+                  <li><strong>Currency:</strong> <span>Nigerian Naira</span></li>
+                  <li><strong>Time Zone:</strong> <span>UTC+1</span></li>
+                  <li><strong>Calling Code:</strong> <span>+234</span></li>
+                  <li><strong>Internet TLD:</strong> <span>.ng</span></li>
+              </ul>
+          </div>
+          <div class="weather">
+              <h2>Weather <span class="weather-icon emoji" role="img" aria-label="partly cloudy">⛅</span></h2>
+              <div class="icon">
+                
+                <img class="weather-icon svg" src="images/weather.svg" alt="partly cloudy">
+              </div>
+              
+              <ul>
+                  <li><strong>Temperature:</strong> <span>25°C</span></li>
+                  <li><strong>Conditions:</strong> <span>Partly Cloudy</span></li>
+                  <li><strong>Wind:</strong> <span>10 km/h</span></li>
+                  <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+              </ul>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Aniekan Winner Anietie | Nigeria</p>
+        <p id="lastModified">Last Modification: <span id="modified-date"></span></p>
+    </footer>
+</body>
+</html>

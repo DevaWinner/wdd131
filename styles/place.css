@@ -1,0 +1,139 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+/* Basic Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Root Variables */
+:root {
+	--primary-color: #008751;
+	--secondary-color: #fefefe;
+	--text-color: #000000;
+	--background-color: #ffffff;
+}
+
+/* Body Styles */
+body {
+	font-family: "Lato", sans-serif;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+	background-color: var(--primary-color);
+	padding: 1.5rem;
+	text-align: center;
+}
+
+header h1 {
+	color: var(--secondary-color);
+	font-size: 2rem;
+}
+
+/* Main Styles */
+main {
+	padding-top: 1rem;
+}
+
+picture img {
+	width: 100%;
+	height: auto;
+}
+
+.info .data,
+.info .weather {
+	padding: 1rem;
+}
+
+.info .weather {
+	border-top: 1px solid rgba(245, 239, 239, 0.699);
+	padding-top: 1rem;
+}
+
+.info h2 {
+	text-align: center;
+	margin-bottom: 1.2rem;
+}
+
+.info ul {
+	list-style: none;
+}
+
+.info ul li {
+	display: flex;
+	justify-content: space-between;
+	gap: 1.2rem;
+}
+
+.info ul li strong {
+	flex: 0 0 150px;
+	text-align: right;
+}
+
+.info ul li span {
+	flex: 1;
+}
+
+.weather-icon.svg {
+	display: none;
+}
+
+.weather-icon.emoji {
+	display: inline;
+}
+
+/* Footer Styles */
+footer {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	text-align: center;
+	padding: 1rem;
+}
+
+footer p {
+	font-size: 1.2rem;
+	margin: 0.5rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.info {
+		padding: 0;
+	}
+
+	.info h2 {
+		font-size: 1.6rem;
+	}
+
+	.info ul {
+		padding: 0.5rem;
+	}
+
+	.info ul li {
+		margin-bottom: 0.7rem;
+	}
+
+	.icon {
+		width: 100%;
+		text-align: center;
+	}
+
+	.weather-icon.svg {
+		display: inline;
+		width: 30%;
+		text-align: center;
+	}
+
+	.weather-icon.emoji {
+		display: none;
+	}
+
+	footer #lastModified {
+		font-size: 1rem;
+	}
+}
