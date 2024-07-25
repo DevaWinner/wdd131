@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	line-height: 1.6;
+}
+
+main {
+	margin: 20px;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h1,
+h2 {
+	font-family: "Dongle", sans-serif;
+	color: #06314e;
+	font-size: 2rem;
+}
+
+h1 {
+	background-color: #2ecc71;
+  padding: 10px;
+}
+
+h2 {
+	border-bottom: 2px solid #06314e;
+	padding-bottom: 5px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+p,
+ul {
+	margin: 10px 0;
+}
+
+strong {
+	color: #06314e;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
